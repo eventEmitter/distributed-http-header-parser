@@ -1,0 +1,2 @@
+#!/bin/sh
+./node_modules/.bin/pegjs --allowed-start-rules filter,select,order,value,date,function,array,comparison,access_extended,access_array,access_dot,identifier,selector,selector_base lib/parser/_HeaderParser.pegjs lib/parser/_HeaderParser.js
