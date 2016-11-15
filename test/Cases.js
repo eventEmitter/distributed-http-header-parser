@@ -45,7 +45,12 @@ module.exports = {
         , 'filter-nested'               : 'event[startDate > 2016-01-01 , deleted = null ]'
         , 'filter-aggregated'           : 'event[venue.deleted, owner.deleted] = null'
     }
-    , "order"  : {}
+    , "order"  : {
+          'order-field'                  : 'startDate RAND'
+        , 'order-selector'               : 'event.startDate DESC'
+        , 'order-multiple'               : 'startDate ASC, endDate DESC'
+        , 'order-multiple-selector'      : 'event.startDate ASC, event.endDate DESC'
+    }
 
     , casesFor(key, prefix){
         var   cases         = this[key] || {}

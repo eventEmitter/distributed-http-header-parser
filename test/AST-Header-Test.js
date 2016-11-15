@@ -5,10 +5,9 @@ var   log     = require('ee-log')
     , allCases= require('./Cases');
 
 /**
- * The following tests only test the ability of the parser to recognize certain syntactical structures which can also
- * be read as a documentation.
+ * These tests should ensure some structural assumptions on the generated AST.
  *
- * We don't do any assumptions on the generated AST.
+ * @todo: implement more of them.
  */
 // simplified iterator
 function caseRunner(parser, cases){

@@ -3,6 +3,11 @@ var   log     = require('ee-log')
     , parser  = require('../lib/parser/HeaderParser')
     , pAssert = require('./ParserAssertion').forParser(parser);
 
+/**
+ * The following test are done to test all non literal parsing rules and are far from complete.
+ *
+ * @todo: extend these tests
+ */
 describe('Syntax-Structures', function(){
 
     describe('date', function() {

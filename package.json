@@ -1,7 +1,7 @@
 {
       "name"                        : "distributed-http-header-parser"
     , "description"                 : "Parser to process custom rest headers"
-    , "version"                     : "0.1.0"
+    , "version"                     : "0.1.1"
     , "homepage"                    : "https://github.com/eventEmitter/distributed-http-header-parser"
     , "author"                      : "Michael Rüfenacht <ruefe@rcky.ch> (http://rcky.ch/)"
     , "licence"                     : "mit"
@@ -16,7 +16,7 @@
         "url"                       : "https://github.com/eventEmitter/distributed-http-header-parser/issues"
     }
     , "dependencies": {
-          "ee-class"                : "1.0.*"
+          "ee-class"                : "1.4.*"
         , "ee-types"                : "0.1.*"
         , "ee-log"                  : "0.3.*"
         , "pegjs"                   : "0.9.*"

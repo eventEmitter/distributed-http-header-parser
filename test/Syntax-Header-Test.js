@@ -144,4 +144,30 @@ describe('Syntax-Header', function(){
         });
 
     });
+
+    describe('order (used to set an ordering direction on queries)', function() {
+
+        var order  = pAssert.forRule('order')
+            , cases = allCases.casesFor('order', 'order-');
+
+        it('supports basic selectors with an arbitrary direction', ()=> {
+            order.parse(cases.at('field'));
+        });
+
+        it('supports dot access with an arbitrary direction', ()=> {
+            order.parse(cases.at('selector'));
+        });
+
+        it('does not support nested access', ()=> {
+            order.fail('event[startDate, endDate] ASC');
+        });
+
+        it('supports multiple orderings', ()=> {
+            order.parse(cases.at('multiple'));
+        });
+
+        it('supports multiple orderings with dot access', ()=> {
+            var result = order.parse(cases.at('multiple-selector'));
+        });
+    });
 });
