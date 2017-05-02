@@ -17,12 +17,12 @@
     }
     , "dependencies": {
           "ee-class"                : "1.4.*"
-        , "ee-types"                : "0.1.*"
-        , "ee-log"                  : "0.3.*"
-        , "pegjs"                   : "0.9.*"
+        , "ee-types"                : "~2.1.2"
+        , "ee-log"                  : "~2.0.2"
+        , "pegjs"                   : "~0.10.0"
     }
     , "devDependencies": {
-        "mocha"                     : "1.18.*"        
+        "mocha"                     : "~3.3.0"        
     }
     , "optionalDependencies": {}
     , "keywords"                    : ["node" , "rest" , "headers" , "dsl"]
